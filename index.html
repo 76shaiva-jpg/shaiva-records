@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shaiva Records | Аудио-плагины и сэмплерные библиотеки</title>
-    <meta name="description" content="Бесплатные Lo-Fi плагины, библиотеки для Decent Sampler и утилиты для NI Kontakt от Shaiva Records. Уникальный аналоговый характер и глубокая оптимизация.">
+    <title>Shaiva Records | Аудио-синтезаторы и сэмплерные инструменты</title>
+    <meta name="description" content="Бесплатные Lo-Fi плагины, аналоговые синтезаторы, библиотеки для Decent Sampler и утилиты для NI Kontakt от Shaiva Records.">
     <!-- Google Fonts: Outfit & Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,14 +22,18 @@
     <!-- Шапка сайта (Navbar) -->
     <header class="header">
         <div class="container navbar">
-            <div class="logo">
-                <span class="logo-icon"><i class="fa-solid fa-record-vinyl"></i></span>
+            <a href="#hero" class="logo-wrapper">
+                <!-- Обрезанный логотип (только знак SR) -->
+                <div class="logo-icon-container">
+                    <img src="images/logo.png" alt="SR Logo Icon">
+                </div>
                 <span class="logo-text">SHAIVA <span class="accent-text">RECORDS</span></span>
-            </div>
+            </a>
             <nav class="nav">
                 <a href="#hero" class="nav-link">Главная</a>
                 <a href="#catalog" class="nav-link">Каталог</a>
                 <a href="#about" class="nav-link">О проекте</a>
+                <a href="#donate" class="nav-link">Донат</a>
                 <a href="#footer" class="nav-link">Контакты</a>
             </nav>
         </div>
@@ -38,8 +42,12 @@
     <!-- Главная секция (Hero) -->
     <section id="hero" class="hero-section">
         <div class="container hero-content">
+            <!-- Крупный логотип в Hero -->
+            <div class="hero-logo">
+                <img src="images/logo.png" alt="Shaiva Records Logo">
+            </div>
             <h1 class="hero-title">Аудио-инструменты <br><span class="gradient-text">с аналоговым характером</span></h1>
-            <p class="hero-subtitle">Уникальные Lo-Fi эффекты, оптимизированные сэмплерные библиотеки и полезный софт для музыкантов и звукоинженеров.</p>
+            <p class="hero-subtitle">Уникальные Lo-Fi эффекты, виртуальные синтезаторы и оптимизированные сэмплерные библиотеки.</p>
             <div class="hero-cta">
                 <a href="#catalog" class="btn btn-primary">Открыть каталог <i class="fa-solid fa-arrow-down-long"></i></a>
             </div>
@@ -78,7 +86,6 @@
                         </ul>
                         <div class="product-footer">
                             <a href="https://disk.yandex.ru/d/8AjpdsT4C7jyXw" target="_blank" class="btn btn-card-download"><i class="fa-solid fa-download"></i> Скачать</a>
-                            <!-- YouTube ID для замены: dQw4w9WgXcQ (замените в data-video-id на свой) -->
                             <button class="btn btn-card-demo" data-video-id="dQw4w9WgXcQ"><i class="fa-solid fa-play"></i> Демо</button>
                         </div>
                     </div>
@@ -181,24 +188,65 @@
 
     <!-- Секция О проекте -->
     <section id="about" class="about-section">
-        <div class="container about-grid">
-            <div class="about-text">
-                <h2 class="section-title">О проекте Shaiva Records</h2>
-                <p>Мы — небольшая независимая лаборатория звука, которая занимается восстановлением, оцифровкой и оптимизацией культовых винтажных музыкальных инструментов, а также созданием полезного софта для облегчения работы музыкантов.</p>
-                <p>Каждая наша библиотека сэмплов проходит строгий процесс очистки, оптимизации ресурсов и ручной доработки интерфейса. Наша цель — дать продюсерам доступ к характерным аналоговым тембрам прошлых десятилетий, обеспечив стабильную работу инструментов в современных DAW.</p>
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2 class="section-title">О проекте Shaiva Records</h2>
+                    <p>Мы — небольшая независимая лаборатория звука, которая занимается восстановлением, оцифровкой и оптимизацией культовых винтажных музыкальных инструментов, а также созданием полезного софта для облегчения работы музыкантов.</p>
+                    <p>Каждый наш релиз проходит строгий процесс очистки, оптимизации ресурсов и ручной доработки интерфейса. Наша цель — дать продюсерам доступ к характерным аналоговым тембрам прошлых десятилетий, обеспечив стабильную работу инструментов в современных DAW.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Проектов готово</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">0 руб</span>
+                        <span class="stat-label">Всегда бесплатно</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Аналоговый дух</span>
+                    </div>
+                </div>
             </div>
-            <div class="about-stats">
-                <div class="stat-card">
-                    <span class="stat-number">5+</span>
-                    <span class="stat-label">Проектов готово</span>
+
+            <!-- Образовательные карточки: что мы делаем -->
+            <div class="edu-cards">
+                <div class="edu-card">
+                    <h3><i class="fa-solid fa-wave-square"></i> Виртуальные синтезаторы</h3>
+                    <p>Это полноценные программные синтезаторы (VST/AU), которые генерируют звук прямо на ходу с помощью математических алгоритмов и кода (как наши текущие разработки). Они имеют гибкую систему настроек, осцилляторы, огибающие и LFO, позволяя крутить уникальные тембры с нуля.</p>
                 </div>
-                <div class="stat-card">
-                    <span class="stat-number">0 руб</span>
-                    <span class="stat-label">Всегда бесплатно</span>
+                <div class="edu-card">
+                    <h3><i class="fa-solid fa-layer-group"></i> Сэмплерные инструменты</h3>
+                    <p>Это инструменты, основанные на аудиозаписях (сэмплах) реального аналогового железа. Мы записываем каждую ноту синтезатора в высоком разрешении, обрабатываем их и упаковываем в библиотеки (для Decent Sampler или Kontakt). При игре плагин воспроизводит эти реальные звуки, давая 100% достоверность оригинального прибора.</p>
                 </div>
-                <div class="stat-card">
-                    <span class="stat-number">100%</span>
-                    <span class="stat-label">Аналоговый дух</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция Поддержать проект (Донаты) -->
+    <section id="donate" class="donation-section">
+        <div class="container">
+            <div class="donation-card">
+                <div class="donation-icon"><i class="fa-solid fa-heart"></i></div>
+                <h2 class="donation-title">Поддержать Shaiva Records</h2>
+                <p class="donation-desc">Все наши разработки (синтезаторы, эффекты и библиотеки) полностью бесплатны и создаются на чистом энтузиазме. Если вам нравится наш софт, вы можете поддержать проект рублем.</p>
+                
+                <div class="donation-methods">
+                    <!-- Сбербанк -->
+                    <div class="card-number-box">
+                        <span class="card-label">Сбербанк</span>
+                        <span class="card-value" id="cardNum">2202206728628186</span>
+                        <button class="btn-copy" id="btnCopy">
+                            Копировать
+                            <span class="tooltip" id="copyTooltip">Скопировано!</span>
+                        </button>
+                    </div>
+                    <div class="donation-recipient">Получатель: Иван Попов</div>
+                    
+                    <!-- ЮMoney -->
+                    <a href="https://yoomoney.ru/to/410011485670866" target="_blank" class="btn btn-yoomoney"><i class="fa-solid fa-wallet"></i> Перевести через ЮMoney</a>
                 </div>
             </div>
         </div>
@@ -208,23 +256,27 @@
     <footer id="footer" class="footer">
         <div class="container footer-content">
             <div class="footer-info">
-                <div class="logo">
-                    <span class="logo-icon"><i class="fa-solid fa-record-vinyl"></i></span>
+                <a href="#hero" class="logo-wrapper">
+                    <!-- Обрезанный логотип для футера -->
+                    <div class="logo-icon-container">
+                        <img src="images/logo.png" alt="SR Logo Footer">
+                    </div>
                     <span class="logo-text">SHAIVA <span class="accent-text">RECORDS</span></span>
-                </div>
-                <p class="footer-desc">Независимая разработка аудиоэффектов и сэмплерных инструментов.</p>
+                </a>
+                <p class="footer-desc">Независимая разработка виртуальных синтезаторов, аудиоэффектов и сэмплерных инструментов.</p>
             </div>
             <div class="footer-links">
-                <h4>Наши ресурсы</h4>
+                <h4>Контакты и ресурсы</h4>
                 <div class="social-icons">
-                    <a href="https://youtube.com" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="https://t.me" target="_blank" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
-                    <a href="https://github.com" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://t.me/Shaiva" target="_blank" title="Личный Telegram (По всем вопросам)"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://vk.com/shamaniva" target="_blank" title="ВКонтакте"><i class="fa-brands fa-vk"></i></a>
+                    <a href="https://www.facebook.com/ivan.shaiva" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com/@Ivan_Shaiva" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Shaiva Records. Все права сохранены. Разработка на чистом энтузиазме.</p>
+            <p>&copy; 2026 Shaiva Records. Все права сохранены. Создано музыкантами для музыкантов.</p>
         </div>
     </footer>
 

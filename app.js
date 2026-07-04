@@ -95,12 +95,56 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             header.style.padding = '0.5rem 0';
-            header.style.background = 'rgba(10, 11, 13, 0.95)';
+            header.style.background = 'rgba(8, 8, 10, 0.95)';
             header.style.boxShadow = '0 10px 30px rgba(0,0,0,0.5)';
         } else {
             header.style.padding = '0';
-            header.style.background = 'rgba(10, 11, 13, 0.7)';
+            header.style.background = 'rgba(8, 8, 10, 0.8)';
             header.style.boxShadow = 'none';
         }
     });
+
+    /* ==========================================================================
+       CLIPBOARD COPY LOGIC (SBERBANK CARD)
+       ========================================================================== */
+    const btnCopy = document.getElementById('btnCopy');
+    const cardNum = document.getElementById('cardNum');
+    const tooltip = document.getElementById('copyTooltip');
+    const cardBox = document.querySelector('.card-number-box');
+
+    if (btnCopy && cardNum && tooltip) {
+        btnCopy.addEventListener('click', () => {
+            const cardNumber = cardNum.textContent.replace(/\s+/g, ''); // remove any spaces
+            
+            navigator.clipboard.writeText(cardNumber).then(() => {
+                // Show tooltip feedback
+                tooltip.classList.add('show');
+                cardBox.classList.add('focused');
+                
+                // Reset feedback after 2 seconds
+                setTimeout(() => {
+                    tooltip.classList.remove('show');
+                    cardBox.classList.remove('focused');
+                }, 2000);
+            }).catch(err => {
+                console.error('Ошибка копирования: ', err);
+                
+                // Fallback for older browsers or blocking environments
+                const textArea = document.createElement('textarea');
+                textArea.value = cardNumber;
+                document.body.appendChild(textArea);
+                textArea.select();
+                try {
+                    document.execCommand('copy');
+                    tooltip.classList.add('show');
+                    setTimeout(() => {
+                        tooltip.classList.remove('show');
+                    }, 2000);
+                } catch (fallbackErr) {
+                    alert('Не удалось скопировать карту. Пожалуйста, выделите её и скопируйте вручную.');
+                }
+                document.body.removeChild(textArea);
+            });
+        });
+    }
 });
