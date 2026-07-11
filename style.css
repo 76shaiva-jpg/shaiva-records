@@ -448,17 +448,18 @@ body {
 }
 
 .product-features li {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.6rem;
+    position: relative;
+    padding-left: 1.5rem;
     font-size: 0.88rem;
     color: var(--text-secondary);
     margin-bottom: 0.6rem;
 }
 
 .product-features li i {
+    position: absolute;
+    left: 0;
+    top: 0.25rem;
     color: var(--accent-copper-light);
-    margin-top: 0.2rem;
 }
 
 .product-features li strong {
