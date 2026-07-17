@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shaiva Records | Аудио-синтезаторы и сэмплерные инструменты</title>
+    <title>Shaiva Records | VST Plugins & Decent Sampler Libraries</title>
     <meta name="description" content="Бесплатные Lo-Fi плагины, аналоговые синтезаторы, библиотеки для Decent Sampler и утилиты для NI Kontakt от Shaiva Records.">
     <meta name="yandex-verification" content="b3ecbdb50ca194d1" />
     <!-- Google Fonts: Outfit & Inter -->
@@ -30,12 +30,25 @@
                 </div>
                 <span class="logo-text">SHAIVA <span class="accent-text">RECORDS</span></span>
             </a>
+            <!-- Mobile Actions Header -->
+            <div class="mobile-actions">
+                <a href="#donate" class="btn-support-icon" title="Support Development"><i class="fa-solid fa-heart"></i></a>
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="ru">RU</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+            </div>
             <nav class="nav">
-                <a href="#hero" class="nav-link">Главная</a>
-                <a href="#catalog" class="nav-link">Каталог</a>
-                <a href="#about" class="nav-link">О проекте</a>
-                <a href="#donate" class="nav-link">Донат</a>
-                <a href="#footer" class="nav-link">Контакты</a>
+                <a href="#hero" class="nav-link"><span class="lang-ru">Главная</span><span class="lang-en">Home</span></a>
+                <a href="#catalog" class="nav-link"><span class="lang-ru">Каталог</span><span class="lang-en">Catalog</span></a>
+                <a href="#about" class="nav-link"><span class="lang-ru">О проекте</span><span class="lang-en">About</span></a>
+                <a href="#donate" class="nav-link"><span class="lang-ru">Поддержать</span><span class="lang-en">Support</span></a>
+                <a href="#footer" class="nav-link"><span class="lang-ru">Контакты</span><span class="lang-en">Contact</span></a>
+                <!-- Desktop Language Switcher -->
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="ru">RU</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
             </nav>
         </div>
     </header>
@@ -47,10 +60,19 @@
             <div class="hero-logo">
                 <img src="images/logo.png" alt="Shaiva Records Logo">
             </div>
-            <h1 class="hero-title">Аудио-инструменты <br><span class="gradient-text">с аналоговым характером</span></h1>
-            <p class="hero-subtitle">Уникальные Lo-Fi эффекты, виртуальные синтезаторы и оптимизированные сэмплерные библиотеки.</p>
+            <h1 class="hero-title">
+                <span class="lang-ru">Аудио-инструменты <br><span class="gradient-text">с аналоговым характером</span></span>
+                <span class="lang-en">Audio Tools <br><span class="gradient-text">with Analog Character</span></span>
+            </h1>
+            <p class="hero-subtitle">
+                <span class="lang-ru">Уникальные Lo-Fi эффекты, виртуальные синтезаторы и оптимизированные сэмплерные библиотеки.</span>
+                <span class="lang-en">Unique Lo-Fi effects, virtual synthesizers, and optimized sampler libraries.</span>
+            </p>
             <div class="hero-cta">
-                <a href="#catalog" class="btn btn-primary">Открыть каталог <i class="fa-solid fa-arrow-down-long"></i></a>
+                <a href="#catalog" class="btn btn-primary">
+                    <span class="lang-ru">Открыть каталог <i class="fa-solid fa-arrow-down-long"></i></span>
+                    <span class="lang-en">Browse Catalog <i class="fa-solid fa-arrow-down-long"></i></span>
+                </a>
             </div>
         </div>
     </section>
@@ -59,12 +81,27 @@
     <section id="catalog" class="catalog-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Наши разработки</h2>
+                <h2 class="section-title">
+                    <span class="lang-ru">Наши разработки</span>
+                    <span class="lang-en">Our Products</span>
+                </h2>
                 <div class="filter-bar">
-                    <button class="filter-btn active" data-filter="all">Все</button>
-                    <button class="filter-btn" data-filter="effects">Эффекты</button>
-                    <button class="filter-btn" data-filter="samplers">Сэмплеры</button>
-                    <button class="filter-btn" data-filter="utilities">Утилиты</button>
+                    <button class="filter-btn active" data-filter="all">
+                        <span class="lang-ru">Все</span>
+                        <span class="lang-en">All</span>
+                    </button>
+                    <button class="filter-btn" data-filter="effects">
+                        <span class="lang-ru">Эффекты</span>
+                        <span class="lang-en">Effects</span>
+                    </button>
+                    <button class="filter-btn" data-filter="samplers">
+                        <span class="lang-ru">Сэмплеры</span>
+                        <span class="lang-en">Samplers</span>
+                    </button>
+                    <button class="filter-btn" data-filter="utilities">
+                        <span class="lang-ru">Утилиты</span>
+                        <span class="lang-en">Utilities</span>
+                    </button>
                 </div>
             </div>
 
@@ -77,17 +114,39 @@
                     </div>
                     <div class="product-info">
                         <h3 class="product-name">Орбита-302</h3>
-                        <p class="product-tagline">Lo-Fi эффект и сатуратор советских кассет</p>
-                        <p class="product-desc">Креативный плагин, созданный для придания трекам теплого, лампового аналогового звучания. Содержит 10 оригинальных профилей шума советских кассет (МК-60, Свема, Тасма, Славич).</p>
+                        <p class="product-tagline">
+                            <span class="lang-ru">Lo-Fi эффект и сатуратор советских кассет</span>
+                            <span class="lang-en">Lo-Fi Soviet cassette effect & saturator</span>
+                        </p>
+                        <p class="product-desc">
+                            <span class="lang-ru">Креативный плагин, созданный для придания трекам теплого, лампового аналогового звучания. Содержит 10 оригинальных профилей шума советских кассет (МК-60, Свема, Тасма, Славич).</span>
+                            <span class="lang-en">A creative plugin designed to give your tracks a warm, analog tube sound. Contains 10 original noise profiles recorded from Soviet cassettes (MK-60, Svema, Tasma, Slavich).</span>
+                        </p>
                         <ul class="product-features">
-                            <li><i class="fa-solid fa-circle-check"></i> <strong>Сатурация:</strong> мягкое кассетное насыщение</li>
-                            <li><i class="fa-solid fa-circle-check"></i> <strong>Детонация (Wow & Flutter):</strong> нестабильность ленты</li>
-                            <li><i class="fa-solid fa-circle-check"></i> <strong>10 типов лент:</strong> от МК-60 1978 г. до Славича 1986 г.</li>
-                            <li><i class="fa-solid fa-circle-check"></i> <strong>Интерфейс:</strong> анимированный кассетный отсек</li>
+                            <li><i class="fa-solid fa-circle-check"></i> 
+                                <span class="lang-ru"><strong>Сатурация:</strong> мягкое кассетное насыщение</span>
+                                <span class="lang-en"><strong>Saturation:</strong> soft tape-style saturation</span>
+                            </li>
+                            <li><i class="fa-solid fa-circle-check"></i> 
+                                <span class="lang-ru"><strong>Детонация (Wow & Flutter):</strong> нестабильность ленты</span>
+                                <span class="lang-en"><strong>Wow & Flutter:</strong> authentic tape pitch instability</span>
+                            </li>
+                            <li><i class="fa-solid fa-circle-check"></i> 
+                                <span class="lang-ru"><strong>10 типов лент:</strong> от МК-60 1978 г. до Славича 1986 г.</span>
+                                <span class="lang-en"><strong>10 Tape Types:</strong> from 1978 MK-60 to 1986 Slavich</span>
+                            </li>
+                            <li><i class="fa-solid fa-circle-check"></i> 
+                                <span class="lang-ru"><strong>Интерфейс:</strong> анимированный кассетный отсек</span>
+                                <span class="lang-en"><strong>UI:</strong> fully animated cassette deck interface</span>
+                            </li>
                         </ul>
+                        <p class="product-support-note">
+                            <span class="lang-ru"><a href="https://boosty.to/shaiva_records" target="_blank" class="card-support-link"><i class="fa-solid fa-heart"></i> Нравится плагин? Поддержите проект</a></span>
+                            <span class="lang-en"><a href="https://boosty.to/shaiva_records" target="_blank" class="card-support-link"><i class="fa-solid fa-heart"></i> Like it? Support development</a></span>
+                        </p>
                         <div class="product-footer">
-                            <a href="https://disk.yandex.ru/d/8AjpdsT4C7jyXw" target="_blank" class="btn btn-card-download"><i class="fa-solid fa-download"></i> Скачать</a>
-                            <button class="btn btn-card-demo" data-video-id="dQw4w9WgXcQ"><i class="fa-solid fa-play"></i> Демо</button>
+                            <a href="https://disk.yandex.ru/d/8AjpdsT4C7jyXw" target="_blank" class="btn btn-card-download"><i class="fa-solid fa-download"></i> <span class="lang-ru">Скачать</span><span class="lang-en">Download</span></a>
+                            <button class="btn btn-card-demo" data-video-id="dQw4w9WgXcQ"><i class="fa-solid fa-play"></i> <span class="lang-ru">Демо</span><span class="lang-en">Demo</span></button>
                         </div>
                     </div>
                 </div>
@@ -100,17 +159,39 @@
                     </div>
                     <div class="product-info">
                         <h3 class="product-name">Орбита 207</h3>
-                        <p class="product-tagline">Советские аналоговые синтезаторы</p>
-                        <p class="product-desc">Сэмплерная библиотека, созданная на основе пака «Soviet Synths From Mars». Содержит звуки 6 легендарных синтезаторов (Поливокс, Аэлита, Альтаир-231, Эстрадин-230, Маэстро, Том-1501) и 3 драм-машин.</p>
+                        <p class="product-tagline">
+                            <span class="lang-ru">Советские аналоговые синтезаторы</span>
+                            <span class="lang-en">Soviet analog synthesizers</span>
+                        </p>
+                        <p class="product-desc">
+                            <span class="lang-ru">Сэмплерная библиотека, созданная на основе пака «Soviet Synths From Mars». Содержит звуки 6 легендарных синтезаторов (Поливокс, Аэлита, Альтаир-231, Эстрадин-230, Маэстро, Том-1501) и 3 драм-машин.</span>
+                            <span class="lang-en">A sampler library built on the 'Soviet Synths From Mars' pack. Features sounds from 6 legendary Soviet synthesizers (Polivoks, Aelita, Altair-231, Estradin-230, Maestro, Tom-1501) and 3 drum machines.</span>
+                        </p>
                         <ul class="product-features">
-                            <li><i class="fa-solid fa-circle-check"></i> <strong>Глубокая оптимизация:</strong> разделена на 7 быстрых банков</li>
-                            <li><i class="fa-solid fa-circle-check"></i> <strong>Управление:</strong> ADSR, фильтр среза и драйв</li>
-                            <li><i class="fa-solid fa-circle-check"></i> <strong>Эффекты:</strong> хорус, фейзер, дилей и реверб</li>
-                            <li><i class="fa-solid fa-circle-check"></i> <strong>Объем:</strong> 1.6 ГБ, поддержка disk streaming</li>
+                            <li><i class="fa-solid fa-circle-check"></i> 
+                                <span class="lang-ru"><strong>Глубокая оптимизация:</strong> 7 быстрых банков</span>
+                                <span class="lang-en"><strong>Highly Optimized:</strong> split into 7 fast banks</span>
+                            </li>
+                            <li><i class="fa-solid fa-circle-check"></i> 
+                                <span class="lang-ru"><strong>Управление:</strong> ADSR, фильтр среза и драйв</span>
+                                <span class="lang-en"><strong>Controls:</strong> ADSR, cutoff filter, and drive</span>
+                            </li>
+                            <li><i class="fa-solid fa-circle-check"></i> 
+                                <span class="lang-ru"><strong>Эффекты:</strong> хорус, фейзер, дилей и реверб</span>
+                                <span class="lang-en"><strong>Effects:</strong> chorus, phaser, delay, and reverb</span>
+                            </li>
+                            <li><i class="fa-solid fa-circle-check"></i> 
+                                <span class="lang-ru"><strong>Объем:</strong> 1.6 ГБ, поддержка disk streaming</span>
+                                <span class="lang-en"><strong>Size:</strong> 1.6 GB, supports disk streaming</span>
+                            </li>
                         </ul>
+                        <p class="product-support-note">
+                            <span class="lang-ru"><a href="https://boosty.to/shaiva_records" target="_blank" class="card-support-link"><i class="fa-solid fa-heart"></i> Нравится плагин? Поддержите проект</a></span>
+                            <span class="lang-en"><a href="https://boosty.to/shaiva_records" target="_blank" class="card-support-link"><i class="fa-solid fa-heart"></i> Like it? Support development</a></span>
+                        </p>
                         <div class="product-footer">
-                            <a href="https://disk.yandex.ru/d/Os1OAFtSfg2XEA" target="_blank" class="btn btn-card-download"><i class="fa-solid fa-download"></i> Скачать</a>
-                            <button class="btn btn-card-demo" data-video-id="3wnS5niQzsI"><i class="fa-solid fa-play"></i> Демо</button>
+                            <a href="https://disk.yandex.ru/d/Os1OAFtSfg2XEA" target="_blank" class="btn btn-card-download"><i class="fa-solid fa-download"></i> <span class="lang-ru">Скачать</span><span class="lang-en">Download</span></a>
+                            <button class="btn btn-card-demo" data-video-id="3wnS5niQzsI"><i class="fa-solid fa-play"></i> <span class="lang-ru">Демо</span><span class="lang-en">Demo</span></button>
                         </div>
                     </div>
                 </div>
@@ -123,17 +204,39 @@
                     </div>
                     <div class="product-info">
                         <h3 class="product-name">Скерцо - shaiva mod</h3>
-                        <p class="product-tagline">Гибридный аналоговый инструмент</p>
-                        <p class="product-desc">Сэмплерная библиотека на базе советского электропиано серии «Скерцо». Подходит как для классического электропиано, так и для создания плотных винтажных пэдов и текстур.</p>
+                        <p class="product-tagline">
+                            <span class="lang-ru">Гибридный аналоговый инструмент</span>
+                            <span class="lang-en">Hybrid analog instrument</span>
+                        </p>
+                        <p class="product-desc">
+                            <span class="lang-ru">Сэмплерная библиотека на базе советского электропиано серии «Скерцо». Подходит как для классического электропиано, так и для создания плотных винтажных пэдов и текстур.</span>
+                            <span class="lang-en">A sampler library based on the Soviet 'Scherzo' electric piano. Perfect for classic electric piano keys as well as lush vintage pads and textures.</span>
+                        </p>
                         <ul class="product-features">
-                            <li><i class="fa-solid fa-circle-check"></i> <strong>4 банка:</strong> Piano Sustain, Staccato, Strings, Vibraphone</li>
-                            <li><i class="fa-solid fa-circle-check"></i> <strong>Strings:</strong> бесшовные, зацикленные вручную сэмплы</li>
-                            <li><i class="fa-solid fa-circle-check"></i> <strong>Панель управления:</strong> Tone, Release, Drive</li>
-                            <li><i class="fa-solid fa-circle-check"></i> <strong>Эффекты:</strong> хорус, фейзер, дилей, реверб</li>
+                            <li><i class="fa-solid fa-circle-check"></i> 
+                                <span class="lang-ru"><strong>4 банка:</strong> Piano Sustain, Staccato, Strings, Vibraphone</span>
+                                <span class="lang-en"><strong>4 Banks:</strong> Piano Sustain, Staccato, Strings, Vibraphone</span>
+                            </li>
+                            <li><i class="fa-solid fa-circle-check"></i> 
+                                <span class="lang-ru"><strong>Strings:</strong> бесшовные, зацикленные вручную сэмплы</span>
+                                <span class="lang-en"><strong>Strings:</strong> seamless, manually looped samples</span>
+                            </li>
+                            <li><i class="fa-solid fa-circle-check"></i> 
+                                <span class="lang-ru"><strong>Панель управления:</strong> Tone, Release, Drive</span>
+                                <span class="lang-en"><strong>Controls:</strong> Tone, Release, Drive knobs</span>
+                            </li>
+                            <li><i class="fa-solid fa-circle-check"></i> 
+                                <span class="lang-ru"><strong>Эффекты:</strong> хорус, фейзер, дилей, реверб</span>
+                                <span class="lang-en"><strong>Effects:</strong> chorus, phaser, delay, reverb</span>
+                            </li>
                         </ul>
+                        <p class="product-support-note">
+                            <span class="lang-ru"><a href="https://boosty.to/shaiva_records" target="_blank" class="card-support-link"><i class="fa-solid fa-heart"></i> Нравится плагин? Поддержите проект</a></span>
+                            <span class="lang-en"><a href="https://boosty.to/shaiva_records" target="_blank" class="card-support-link"><i class="fa-solid fa-heart"></i> Like it? Support development</a></span>
+                        </p>
                         <div class="product-footer">
-                            <a href="https://disk.yandex.ru/d/v5ExWhFOUmTi9g" target="_blank" class="btn btn-card-download"><i class="fa-solid fa-download"></i> Скачать</a>
-                            <button class="btn btn-card-demo" data-video-id="dQw4w9WgXcQ"><i class="fa-solid fa-play"></i> Демо</button>
+                            <a href="https://disk.yandex.ru/d/v5ExWhFOUmTi9g" target="_blank" class="btn btn-card-download"><i class="fa-solid fa-download"></i> <span class="lang-ru">Скачать</span><span class="lang-en">Download</span></a>
+                            <button class="btn btn-card-demo" data-video-id="dQw4w9WgXcQ"><i class="fa-solid fa-play"></i> <span class="lang-ru">Демо</span><span class="lang-en">Demo</span></button>
                         </div>
                     </div>
                 </div>
@@ -146,17 +249,39 @@
                     </div>
                     <div class="product-info">
                         <h3 class="product-name">Boss DR-660 VSTi</h3>
-                        <p class="product-tagline">Классическая драм-машина 90-х</p>
-                        <p class="product-desc">Тщательно воссозданное звучание легендарного драм-модуля Boss DR-660. Библиотека создана на основе высококачественных WAV-сэмплов (48kHz / 24-bit).</p>
+                        <p class="product-tagline">
+                            <span class="lang-ru">Классическая драм-машина 90-х</span>
+                            <span class="lang-en">Classic 90s drum machine</span>
+                        </p>
+                        <p class="product-desc">
+                            <span class="lang-ru">Тщательно воссозданное звучание легендарного драм-модуля Boss DR-660. Библиотека создана на основе высококачественных WAV-сэмплов (48kHz / 24-bit).</span>
+                            <span class="lang-en">Faithfully recreated sound of the legendary Boss DR-660 drum module. The library is built from high-quality 48kHz / 24-bit WAV samples.</span>
+                        </p>
                         <ul class="product-features">
-                            <li><i class="fa-solid fa-circle-check"></i> <strong>15 барабанных наборов (Drum Kits):</strong> от TR-808 до акустики</li>
-                            <li><i class="fa-solid fa-circle-check"></i> <strong>GM-раскладка:</strong> полная совместимость с MIDI</li>
-                            <li><i class="fa-solid fa-circle-check"></i> <strong>Управление:</strong> Громкость, Фильтр, Реверберация</li>
-                            <li><i class="fa-solid fa-circle-check"></i> <strong>Экраны:</strong> стереорасширитель (Chorus), Delay и Lo-Fi</li>
+                            <li><i class="fa-solid fa-circle-check"></i> 
+                                <span class="lang-ru"><strong>15 наборов (Drum Kits):</strong> от TR-808 до акустики</span>
+                                <span class="lang-en"><strong>15 Kits:</strong> from Roland TR-808 to acoustic</span>
+                            </li>
+                            <li><i class="fa-solid fa-circle-check"></i> 
+                                <span class="lang-ru"><strong>GM-раскладка:</strong> полная совместимость с MIDI</span>
+                                <span class="lang-en"><strong>GM Mapping:</strong> fully compatible with MIDI</span>
+                            </li>
+                            <li><i class="fa-solid fa-circle-check"></i> 
+                                <span class="lang-ru"><strong>Управление:</strong> Громкость, Фильтр, Реверберация</span>
+                                <span class="lang-en"><strong>Controls:</strong> Volume, Filter, and Reverb</span>
+                            </li>
+                            <li><i class="fa-solid fa-circle-check"></i> 
+                                <span class="lang-ru"><strong>Экраны:</strong> Chorus (стерео), Delay и Lo-Fi</span>
+                                <span class="lang-en"><strong>Effects:</strong> Chorus widener, Delay, and Lo-Fi</span>
+                            </li>
                         </ul>
+                        <p class="product-support-note">
+                            <span class="lang-ru"><a href="https://boosty.to/shaiva_records" target="_blank" class="card-support-link"><i class="fa-solid fa-heart"></i> Нравится плагин? Поддержите проект</a></span>
+                            <span class="lang-en"><a href="https://boosty.to/shaiva_records" target="_blank" class="card-support-link"><i class="fa-solid fa-heart"></i> Like it? Support development</a></span>
+                        </p>
                         <div class="product-footer">
-                            <a href="https://disk.yandex.ru/d/vrENdZA-HZeqmQ" target="_blank" class="btn btn-card-download"><i class="fa-solid fa-download"></i> Скачать</a>
-                            <button class="btn btn-card-demo" data-video-id="dQw4w9WgXcQ"><i class="fa-solid fa-play"></i> Демо</button>
+                            <a href="https://disk.yandex.ru/d/vrENdZA-HZeqmQ" target="_blank" class="btn btn-card-download"><i class="fa-solid fa-download"></i> <span class="lang-ru">Скачать</span><span class="lang-en">Download</span></a>
+                            <button class="btn btn-card-demo" data-video-id="dQw4w9WgXcQ"><i class="fa-solid fa-play"></i> <span class="lang-ru">Демо</span><span class="lang-en">Demo</span></button>
                         </div>
                     </div>
                 </div>
@@ -169,22 +294,44 @@
                     </div>
                     <div class="product-info">
                         <h3 class="product-name">Casio SA-20 VSTi</h3>
-                        <p class="product-tagline">Портативный lo-fi синтезатор 90-х</p>
-                        <p class="product-desc">Виртуальный инструмент на базе легендарной SA-серии. Мы восстановили поврежденные файлы, исправили разметку сэмплов, перегруппировали звуки и настроили элементы управления для плеера Decent Sampler.</p>
+                        <p class="product-tagline">
+                            <span class="lang-ru">Портативный lo-fi синтезатор 90-х</span>
+                            <span class="lang-en">Portable 90s lo-fi synthesizer</span>
+                        </p>
+                        <p class="product-desc">
+                            <span class="lang-ru">Виртуальный инструмент на базе легендарной SA-серии. Мы восстановили поврежденные файлы, исправили разметку сэмплов, перегруппировали звуки и настроили элементы управления для плеера Decent Sampler.</span>
+                            <span class="lang-en">A virtual instrument based on the legendary SA-series. We restored corrupted files, fixed sample mapping, regrouped sounds, and configured controls for Decent Sampler.</span>
+                        </p>
                         <ul class="product-features">
-                            <li><i class="fa-solid fa-circle-check"></i> <strong>11 звуковых банков:</strong> от фортепиано и органов до SFX и ударных</li>
-                            <li><i class="fa-solid fa-circle-check"></i> <strong>Панель управления:</strong> регуляторы Attack, Release, Tone, Reverb, Delay</li>
-                            <li><i class="fa-solid fa-circle-check"></i> <strong>Оптимизация:</strong> полностью исправленная разметка сэмплов и стабильная работа</li>
-                            <li><i class="fa-solid fa-circle-check"></i> <strong>Винтажный характер:</strong> сырое, шероховатое PCM-звучание ранней цифровой эпохи</li>
+                            <li><i class="fa-solid fa-circle-check"></i> 
+                                <span class="lang-ru"><strong>11 банков:</strong> от клавишных и органов до SFX и ударных</span>
+                                <span class="lang-en"><strong>11 Banks:</strong> from keys and organs to SFX and drums</span>
+                            </li>
+                            <li><i class="fa-solid fa-circle-check"></i> 
+                                <span class="lang-ru"><strong>Управление:</strong> регуляторы Attack, Release, Tone, Reverb, Delay</span>
+                                <span class="lang-en"><strong>Controls:</strong> Attack, Release, Tone filter, Reverb, Delay</span>
+                            </li>
+                            <li><i class="fa-solid fa-circle-check"></i> 
+                                <span class="lang-ru"><strong>Оптимизация:</strong> исправленная разметка сэмплов</span>
+                                <span class="lang-en"><strong>Optimization:</strong> fully corrected sample mapping</span>
+                            </li>
+                            <li><i class="fa-solid fa-circle-check"></i> 
+                                <span class="lang-ru"><strong>Винтажный характер:</strong> сырое PCM-звучание эпохи 90-х</span>
+                                <span class="lang-en"><strong>Vintage Tone:</strong> raw early digital 90s PCM sound</span>
+                            </li>
                         </ul>
+                        <p class="product-support-note">
+                            <span class="lang-ru"><a href="https://boosty.to/shaiva_records" target="_blank" class="card-support-link"><i class="fa-solid fa-heart"></i> Нравится плагин? Поддержите проект</a></span>
+                            <span class="lang-en"><a href="https://boosty.to/shaiva_records" target="_blank" class="card-support-link"><i class="fa-solid fa-heart"></i> Like it? Support development</a></span>
+                        </p>
                         <div class="product-footer">
-                            <a href="https://disk.yandex.ru/d/A48B83h3X0rS3w" target="_blank" class="btn btn-card-download"><i class="fa-solid fa-download"></i> Скачать</a>
-                            <button class="btn btn-card-demo" data-video-id="-wvRbq2Tc9M"><i class="fa-solid fa-play"></i> Демо</button>
+                            <a href="https://disk.yandex.ru/d/A48B83h3X0rS3w" target="_blank" class="btn btn-card-download"><i class="fa-solid fa-download"></i> <span class="lang-ru">Скачать</span><span class="lang-en">Download</span></a>
+                            <button class="btn btn-card-demo" data-video-id="-wvRbq2Tc9M"><i class="fa-solid fa-play"></i> <span class="lang-ru">Демо</span><span class="lang-en">Demo</span></button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Карточка 5: Kontakt Helper -->
+                <!-- Карточка 6: Kontakt Helper -->
                 <div class="product-card" data-category="utilities">
                     <div class="product-badge">Utility (Windows)</div>
                     <div class="product-image-container">
@@ -192,17 +339,39 @@
                     </div>
                     <div class="product-info">
                         <h3 class="product-name">Kontakt Helper</h3>
-                        <p class="product-tagline">Автоматизатор библиотек NI Kontakt</p>
-                        <p class="product-desc">Утилита на Python для быстрого оформления сторонних библиотек. Автоматически создает обложки, генерирует файлы манифестов и файлы регистрации (.nicnt) за пару кликов.</p>
+                        <p class="product-tagline">
+                            <span class="lang-ru">Автоматизатор библиотек NI Kontakt</span>
+                            <span class="lang-en">NI Kontakt Library Automator</span>
+                        </p>
+                        <p class="product-desc">
+                            <span class="lang-ru">Утилита на Python для быстрого оформления сторонних библиотек. Автоматически создает обложки, генерирует файлы манифестов и файлы регистрации (.nicnt) за пару кликов.</span>
+                            <span class="lang-en">A Python utility for quick layout of custom libraries. Automatically creates wallpapers, generates XML manifests, and produces registration files (.nicnt) in just a few clicks.</span>
+                        </p>
                         <ul class="product-features">
-                            <li><i class="fa-solid fa-circle-check"></i> <strong>Создание обоев:</strong> автогенерация подложки 300x90</li>
-                            <li><i class="fa-solid fa-circle-check"></i> <strong>Поддержка Kontakt 7/8:</strong> полный набор плиток (MST)</li>
-                            <li><i class="fa-solid fa-circle-check"></i> <strong>Автоматизация путей:</strong> сама раскладывает файлы по папкам</li>
-                            <li><i class="fa-solid fa-circle-check"></i> <strong>Регистрация:</strong> автогенерация SNPID и .nicnt</li>
+                            <li><i class="fa-solid fa-circle-check"></i> 
+                                <span class="lang-ru"><strong>Создание обоев:</strong> автогенерация подложки 300x90</span>
+                                <span class="lang-en"><strong>Wallpapers:</strong> auto-generates 300x90 graphics</span>
+                            </li>
+                            <li><i class="fa-solid fa-circle-check"></i> 
+                                <span class="lang-ru"><strong>Поддержка Kontakt 7/8:</strong> полный набор плиток (MST)</span>
+                                <span class="lang-en"><strong>Kontakt 7/8:</strong> full MST tile artwork package</span>
+                            </li>
+                            <li><i class="fa-solid fa-circle-check"></i> 
+                                <span class="lang-ru"><strong>Автоматизация путей:</strong> раскладывает файлы по папкам</span>
+                                <span class="lang-en"><strong>Path Automation:</strong> automatically deploys files to paths</span>
+                            </li>
+                            <li><i class="fa-solid fa-circle-check"></i> 
+                                <span class="lang-ru"><strong>Регистрация:</strong> автогенерация SNPID и .nicnt</span>
+                                <span class="lang-en"><strong>Registration:</strong> auto-generates SNPID and .nicnt files</span>
+                            </li>
                         </ul>
+                        <p class="product-support-note">
+                            <span class="lang-ru"><a href="https://boosty.to/shaiva_records" target="_blank" class="card-support-link"><i class="fa-solid fa-heart"></i> Нравится плагин? Поддержите проект</a></span>
+                            <span class="lang-en"><a href="https://boosty.to/shaiva_records" target="_blank" class="card-support-link"><i class="fa-solid fa-heart"></i> Like it? Support development</a></span>
+                        </p>
                         <div class="product-footer">
-                            <a href="https://disk.yandex.ru/d/4z_281eQcF1TMw" target="_blank" class="btn btn-card-download"><i class="fa-solid fa-download"></i> Скачать</a>
-                            <button class="btn btn-card-demo" data-video-id="dQw4w9WgXcQ"><i class="fa-solid fa-play"></i> Демо</button>
+                            <a href="https://disk.yandex.ru/d/4z_281eQcF1TMw" target="_blank" class="btn btn-card-download"><i class="fa-solid fa-download"></i> <span class="lang-ru">Скачать</span><span class="lang-en">Download</span></a>
+                            <button class="btn btn-card-demo" data-video-id="dQw4w9WgXcQ"><i class="fa-solid fa-play"></i> <span class="lang-ru">Демо</span><span class="lang-en">Demo</span></button>
                         </div>
                     </div>
                 </div>
@@ -215,22 +384,40 @@
         <div class="container">
             <div class="about-grid">
                 <div class="about-text">
-                    <h2 class="section-title">О проекте Shaiva Records</h2>
-                    <p>Мы — небольшая независимая лаборатория звука, которая занимается восстановлением, оцифровкой и оптимизацией культовых винтажных музыкальных инструментов, а также созданием полезного софта для облегчения работы музыкантов.</p>
-                    <p>Помимо оцифровки собственных находок, мы нередко берем за основу редкие общедоступные или сторонние библиотеки сэмплов, которые изначально были сделаны неудобно или работали нестабильно. Мы бережно пересобираем их, оптимизируем структуру файлов для снижения нагрузки на память и адаптируем интерфейсы под современные стандарты сэмплеров. Это позволяет дать второе дыхание редким звукам и сделать их удобными для быстрого творчества.</p>
+                    <h2 class="section-title">
+                        <span class="lang-ru">О проекте Shaiva Records</span>
+                        <span class="lang-en">About Shaiva Records</span>
+                    </h2>
+                    <p>
+                        <span class="lang-ru">Я — музыкант и продюсер. Я занимаюсь поиском, восстановлением, оцифровкой и оптимизацией редких и культовых винтажных музыкальных инструментов, а также созданием полезного софта для музыкантов.</span>
+                        <span class="lang-en">I am a musician and producer. I focus on finding, restoring, sampling, and optimizing rare vintage musical instruments, as well as creating useful software tools for fellow musicians.</span>
+                    </p>
+                    <p>
+                        <span class="lang-ru">Помимо оцифровки собственных находок, я нередко беру за основу редкие общедоступные библиотеки сэмплов, которые изначально работали нестабильно. Я бережно пересобираем их, оптимизирую структуру файлов для снижения нагрузки на память и адаптирую интерфейсы под современные стандарты. Это позволяет дать второе дыхание редким звукам и сделать их удобными для творчества.</span>
+                        <span class="lang-en">Along with sampling my own instruments, I often take rare, public-domain, or abandoned sample libraries that were originally unstable or unoptimized. I carefully rebuild them, optimize file structures to reduce RAM usage, and adapt the interfaces to modern sampler standards. This breathes new life into rare sounds and makes them ready for modern production.</span>
+                    </p>
                 </div>
                 <div class="about-stats">
                     <div class="stat-card">
                         <span class="stat-number">6+</span>
-                        <span class="stat-label">Проектов готово</span>
+                        <span class="stat-label">
+                            <span class="lang-ru">Проектов готово</span>
+                            <span class="lang-en">Projects ready</span>
+                        </span>
                     </div>
                     <div class="stat-card">
-                        <span class="stat-number">0 руб</span>
-                        <span class="stat-label">Всегда бесплатно</span>
+                        <span class="stat-number">0 ₽</span>
+                        <span class="stat-label">
+                            <span class="lang-ru">Всегда бесплатно</span>
+                            <span class="lang-en">Always free</span>
+                        </span>
                     </div>
                     <div class="stat-card">
                         <span class="stat-number">100%</span>
-                        <span class="stat-label">Аналоговый дух</span>
+                        <span class="stat-label">
+                            <span class="lang-ru">Аналоговый дух</span>
+                            <span class="lang-en">Analog spirit</span>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -242,23 +429,48 @@
         <div class="container">
             <div class="donation-card">
                 <div class="donation-icon"><i class="fa-solid fa-heart"></i></div>
-                <h2 class="donation-title">Поддержать Shaiva Records</h2>
-                <p class="donation-desc">Все наши разработки (синтезаторы, эффекты и библиотеки) полностью бесплатны и создаются на чистом энтузиазме. Если вам нравится наш софт, вы можете поддержать проект рублем.</p>
+                <h2 class="donation-title">
+                    <span class="lang-ru">Поддержать развитие проекта</span>
+                    <span class="lang-en">Support Project Development</span>
+                </h2>
+                <p class="donation-desc">
+                    <span class="lang-ru">Все мои разработки (синтезаторы, эффекты и библиотеки) полностью бесплатны и создаются на чистом энтузиазме. Если вам нравится мой софт и вы хотите помочь в создании новых инструментов, вы можете сделать добровольный разовый перевод.</span>
+                    <span class="lang-en">All my synthesizers, effects, and sample libraries are completely free and created out of pure passion. If you enjoy using my software and want to help build new tools, you can make a voluntary one-time support contribution.</span>
+                </p>
                 
                 <div class="donation-methods">
+                    <!-- Boosty (Основной метод) -->
+                    <a href="https://boosty.to/shaiva_records" target="_blank" class="btn btn-primary btn-boosty" style="background: #ff5a19; box-shadow: 0 0 25px rgba(255, 90, 25, 0.3); width: 100%; max-width: 420px; border-radius: 50px; padding: 0.9rem;">
+                        <span class="lang-ru"><i class="fa-solid fa-rocket"></i> Поддержать на Boosty</span>
+                        <span class="lang-en"><i class="fa-solid fa-rocket"></i> Support on Boosty</span>
+                    </a>
+
                     <!-- Сбербанк -->
                     <div class="card-number-box">
-                        <span class="card-label">Сбербанк</span>
+                        <span class="card-label">
+                            <span class="lang-ru">Сбербанк</span>
+                            <span class="lang-en">Sberbank</span>
+                        </span>
                         <span class="card-value" id="cardNum">2202206728628186</span>
                         <button class="btn-copy" id="btnCopy">
-                            Копировать
-                            <span class="tooltip" id="copyTooltip">Скопировано!</span>
+                            <span class="lang-ru">Копировать</span>
+                            <span class="lang-en">Copy</span>
+                            <span class="tooltip" id="copyTooltip">
+                                <span class="lang-ru">Скопировано!</span>
+                                <span class="lang-en">Copied!</span>
+                            </span>
                         </button>
                     </div>
-                    <div class="donation-recipient">Получатель: Иван Попов</div>
+                    <div class="donation-recipient">
+                        <span class="lang-ru">Получатель: Иван Попов</span>
+                        <span class="lang-en">Recipient: Ivan Popov</span>
+                    </div>
                     
                     <!-- ЮMoney -->
-                    <a href="https://yoomoney.ru/to/410011485670866" target="_blank" class="btn btn-yoomoney"><i class="fa-solid fa-wallet"></i> Перевести через ЮMoney</a>
+                    <a href="https://yoomoney.ru/to/410011485670866" target="_blank" class="btn btn-yoomoney">
+                        <span class="lang-ru"><i class="fa-solid fa-wallet"></i> Перевести через ЮMoney</span>
+                        <span class="lang-en"><i class="fa-solid fa-wallet"></i> Support via YooMoney</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -275,10 +487,16 @@
                     </div>
                     <span class="logo-text">SHAIVA <span class="accent-text">RECORDS</span></span>
                 </a>
-                <p class="footer-desc">Независимая разработка виртуальных синтезаторов, аудиоэффектов и сэмплерных инструментов.</p>
+                <p class="footer-desc">
+                    <span class="lang-ru">Независимая разработка виртуальных синтезаторов, аудиоэффектов и сэмплерных инструментов.</span>
+                    <span class="lang-en">Independent development of virtual synthesizers, audio effects, and sampler instruments.</span>
+                </p>
             </div>
             <div class="footer-links">
-                <h4>Контакты и ресурсы</h4>
+                <h4>
+                    <span class="lang-ru">Контакты и ресурсы</span>
+                    <span class="lang-en">Contacts & Resources</span>
+                </h4>
                 <div class="social-icons">
                     <a href="https://t.me/Shaiva" target="_blank" title="Личный Telegram (По всем вопросам)"><i class="fa-brands fa-telegram"></i></a>
                     <a href="https://vk.com/shamaniva" target="_blank" title="ВКонтакте"><i class="fa-brands fa-vk"></i></a>
@@ -288,7 +506,10 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Shaiva Records. Все права сохранены. Создано музыкантами для музыкантов.</p>
+            <p>
+                <span class="lang-ru">&copy; 2026 Shaiva Records. Все права сохранены. Создано музыкантами для музыкантов.</span>
+                <span class="lang-en">&copy; 2026 Shaiva Records. All rights reserved. Created by musicians for musicians.</span>
+            </p>
         </div>
     </footer>
 

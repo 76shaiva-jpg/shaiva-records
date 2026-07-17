@@ -147,4 +147,40 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    /* ==========================================================================
+       LANGUAGE SWITCHER LOGIC (RU / EN)
+       ========================================================================== */
+    const langSwitchers = document.querySelectorAll('.lang-switcher');
+    const htmlElement = document.documentElement;
+
+    // Load language from localStorage or default to Russian
+    const savedLang = localStorage.getItem('site-lang') || 'ru';
+    setLanguage(savedLang);
+
+    langSwitchers.forEach(switcher => {
+        const buttons = switcher.querySelectorAll('.lang-btn');
+        buttons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const lang = btn.getAttribute('data-lang');
+                setLanguage(lang);
+            });
+        });
+    });
+
+    function setLanguage(lang) {
+        htmlElement.setAttribute('lang', lang);
+        localStorage.setItem('site-lang', lang);
+        
+        langSwitchers.forEach(switcher => {
+            const buttons = switcher.querySelectorAll('.lang-btn');
+            buttons.forEach(btn => {
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+        });
+    }
 });
