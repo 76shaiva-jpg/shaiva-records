@@ -45,12 +45,16 @@
     scroll-behavior: smooth;
 }
 
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     background-color: var(--bg-primary);
     color: var(--text-primary);
     font-family: var(--font-body);
     line-height: 1.6;
-    overflow-x: hidden;
     position: relative;
 }
 
@@ -1072,6 +1076,9 @@ html[lang="ru"] .lang-en {
 @media (max-width: 768px) {
     .navbar {
         height: 70px;
+    }
+    .bg-glow {
+        display: none; /* Hide performance-heavy background glow divs on mobile to prevent overflow-x */
     }
     .nav {
         display: none;
