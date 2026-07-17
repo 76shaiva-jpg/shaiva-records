@@ -1126,6 +1126,9 @@ html[lang="ru"] .lang-en {
 }
 
 @media (max-width: 480px) {
+    .logo-text {
+        display: none; /* Hide text on small screens so that Mobile Actions (heart & lang toggle) fit nicely */
+    }
     .card-number-box {
         flex-direction: column;
         gap: 0.8rem;
