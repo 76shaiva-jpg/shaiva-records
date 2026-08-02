@@ -1320,3 +1320,51 @@ html[lang="ru"] .lang-en {
         justify-content: center;
     }
 }
+
+/* Sampler Notice Box & Mirror Links */
+.sampler-notice-box {
+    background: rgba(200, 122, 48, 0.05);
+    border: 1px solid rgba(200, 122, 48, 0.2);
+    border-radius: 14px;
+    padding: 0.8rem 1.2rem;
+    margin: 0rem 0 2.5rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.sampler-notice-box i {
+    color: var(--accent-copper-light);
+    margin-right: 0.4rem;
+}
+
+.sampler-notice-box .notice-link {
+    color: var(--accent-copper-light);
+    text-decoration: underline;
+    font-weight: 600;
+    transition: var(--transition-normal);
+}
+
+.sampler-notice-box .notice-link:hover {
+    color: var(--text-primary);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.product-mirror-note {
+    text-align: center;
+    margin-top: 0.8rem;
+    font-size: 0.8rem;
+}
+
+.mirror-link {
+    color: var(--text-muted);
+    transition: var(--transition-normal);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.mirror-link:hover {
+    color: var(--accent-copper-light);
+    text-decoration: underline;
+}
